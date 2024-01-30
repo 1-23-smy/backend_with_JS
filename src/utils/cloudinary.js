@@ -15,12 +15,16 @@ const uploadonCloudinary = async (localFilePath) => {
     });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   fs.unlinkSync(localFilePath)
 
     // console.log("File is uploaded on cloudinary", response.url);
 =======
     console.log("File is uploaded on cloudinary", response.url);
 >>>>>>> 5527532a4e1a93a7b1b0bf752007cd4c632c80f1
+=======
+    console.log("File is uploaded on cloudinary", response.url);
+>>>>>>> origin/main
     return response
   } catch (error) {
     fs.unlinkSync(localFilePath)//it deletes the file because agar file upload nahi hua cloud pe toh fir wo files reh kar storage consume karenge so better to delete it. we use synchronous ye hona hi hona hai uske baad hi age process karenge so that is the reason to use sync.
